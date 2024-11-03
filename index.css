@@ -1,0 +1,169 @@
+body {
+    font-family: roboto;
+    background-color: rgb(60, 60, 76);
+    padding-left: 250px;
+    padding-right: 250px;
+    
+}
+
+.flex-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+h1 {
+    font-size: 3em;
+}
+ul {
+    list-style-image: url(/assets/images/icon-list.svg);
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border-radius: 10px;
+    height: 40px;
+    color: black;
+    font-size: 1.5em;
+}
+  
+#save-btn {
+    background-color: rgb(25, 20, 58);
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    height: 50px;
+}
+
+#save-btn:hover {
+    background-image: linear-gradient(to right, red, orange);
+    box-shadow: 0 8px 19px rgb(244, 84, 108);
+    transition: box-shadow 0.9s ease-in-out;
+}
+
+
+
+/* style for success page */
+.success {
+    background-color: rgb(60, 60, 76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 500px;
+    height: 500px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-around;
+}
+ 
+
+.message-items {
+    display: flex;
+    flex-direction: column;
+}
+#dismiss-btn {
+    background-color: rgb(22, 22, 116);
+    border-radius: 10px;
+    height: 60px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#dismiss-btn:hover {
+    background-image: linear-gradient(to right, red, orange);
+ 
+}
+
+/* style for mobile devices */
+
+@media only screen and (max-width: 375px){
+    body {
+        font-family: roboto;
+        background-color: rgb(60, 60, 76);
+        padding-left: 0px;
+        padding-right: 0px;
+        
+    }
+    
+    .flex-container {
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: auto;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 0px;
+        
+    }
+
+    .box2 {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+
+
+    /* style for success page mobile devices*/
+.success {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+}
+ 
+
+.message-items {
+    display: flex;
+    flex-direction: column;
+}
+#dismiss-btn {
+    background-color: rgb(22, 22, 116);
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+}
+  
+}
